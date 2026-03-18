@@ -1,10 +1,10 @@
 # Text Analytics: Proyecto Final
-## Maestría en Business Intelligence and Analytics - UVG
+## Master en Business Intelligence and Analytics - UVG
 
 ### Integrantes
-Carlos Rivera - 251518
-Daniel Cabrera - 252136
-Alejandra Alvarado - 18263
+* Carlos Rivera - 251518
+* Daniel Cabrera - 252136
+* Alejandra Alvarado - 18263
 
 ---
 
