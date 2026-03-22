@@ -68,7 +68,5 @@ Para garantizar la reproducibilidad y facilitar la revisión, el proyecto se enc
 * [📓 ProyectoTextAnalytics.ipynb](ProyectoTextAnalytics.ipynb): Notebook principal con el código fuente, EDA y entrenamiento de modelos.
 * [📝 README.md](README.md): Descripción técnica y guía de navegación del proyecto.
   
-* `Proyecto_Final_Text_Analytics.ipynb`: Notebook principal con todo el pipeline de datos, desde la limpieza hasta la inferencia.
-* `README.md`: Descripción técnica del repositorio.
 
-> **Nota:** El análisis detallado del caso de negocio, las métricas comparativas finales y las conclusiones estratégicas se encuentran detalladas en el **Resultados_Proyecto** entregado por separado.
+> **Nota:** El análisis detallado del caso de negocio, las métricas comparativas finales y las conclusiones estratégicas se encuentran detalladas en el **Resultados_Proyecto** y la presentación ejecutiva **Proyecto_TextA_ppt** entregada por separado.
