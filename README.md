@@ -9,7 +9,12 @@
 ---
 
 ### Descripción del Proyecto
-Este proyecto consiste en el desarrollo de un pipeline inteligente para el procesamiento y análisis de grandes volúmenes de texto (NLP), aplicado a la retroalimentación de clientes en plataformas de e-commerce. Se diseñó una solución que combina **Aprendizaje Supervisado** (para clasificar emociones) y **Aprendizaje No Supervisado** (para descubrir temas ocultos), permitiendo una visión de 360 grados sobre la opinión del consumidor.
+Este proyecto desarrolla un pipeline avanzado aplicado a la retroalimentación de clientes de Amazon. La solución es integral, combinando tres enfoques metodológicos:
+1.  **Análisis basado en reglas léxicas:** Uso de **VADER** como modelo base (baseline).
+2.  **Aprendizaje Supervisado:** Comparativa entre **Naive Bayes** y **Regresión Logística** para clasificación de sentimiento.
+3.  **Aprendizaje No Supervisado:** Descubrimiento de temas mediante **Modelado de Tópicos (LDA)**.
+
+El flujo incluye desde la limpieza profunda hasta la interpretabilidad de modelos y análisis de métricas avanzadas (Curva ROC).
 
 
 ---
@@ -29,13 +34,12 @@ Los datos utilizados para este estudio provienen de un repositorio público de *
 
 ### Caso de Negocio: Inteligencia de Clientes en Amazon
 
-En un ecosistema global como el de Amazon, el volumen de retroalimentación diaria es masivo, haciendo imposible la lectura manual de cada comentario. El problema de negocio que resolvemos es la **falta de visibilidad accionable sobre la experiencia del usuario**.
+En un ecosistema global como el de Amazon, el volumen de retroalimentación diaria es masivo, haciendo imposible la lectura manual de cada comentario. El problema resuelto es la falta de visibilidad accionable sobre el volumen masivo de retroalimentación diaria. 
 
 **Este análisis permite:**
-1.  **Detección Automática de Sentimiento:** Identificar reseñas negativas en tiempo real para activar protocolos de servicio al cliente de manera prioritaria.
-2.  **Identificación de Tópicos Críticos:** A través del modelado LDA, la empresa puede descubrir si las quejas se deben a fallas en el hardware (Kindle), problemas de software (Apps) o deficiencias en el contenido (Libros/Juegos).
-3.  **Optimización de Productos:** Al entender no solo *si* al cliente le gusta el producto, sino *por qué* (tópicos), la gerencia puede tomar decisiones informadas sobre futuras actualizaciones y lanzamientos.
-
+1.  **Detección Automática:** Clasificar sentimientos con una precisión superior al 88%.
+2.  **Identificación de Tópicos Críticos:** Determinar si la satisfacción o quejas se derivan del hardware (Kindle), software (Apps) o contenido (Juegos/Libros).
+3.  **Interpretabilidad:** Identificar qué palabras específicas (coeficientes) impulsan la percepción positiva o negativa del usuario.
 
 ---
 
@@ -45,14 +49,14 @@ Para garantizar la reproducibilidad y facilitar la revisión, el proyecto se enc
 1. Haz clic en el siguiente enlace para abrir el notebook:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alealvaradoj131020/TextAnalytics_Proyecto/blob/main/ProyectoTextAnalytics.ipynb)
 
-2. Ejecuta las celdas en orden secuencial. El código descarga automáticamente el dataset desde una fuente remota (no requiere carga de archivos locales).
+2. Ejecuta las celdas en orden. El código gestiona automáticamente la descarga del dataset y las librerías necesarias.
 
 ---
 
 ### Tecnologías y Librerías Utilizadas
-* **Lenguaje:** Python 3.x
-* **Procesamiento de Texto:** NLTK (Tokenización, Stopwords, Lemmatization), Regex.
-* **Modelado y ML:** Scikit-learn (TF-IDF, Naive Bayes, Logistic Regression).
+* **Lenguaje:** Python 3.12+
+* **Procesamiento de Texto:** NLTK (Tokenización, Stopwords, Lemmatization, VADER), Regex.
+* **Modelado y ML:** Scikit-learn (TF-IDF, Naive Bayes, Logistic Regression, ROC Curve).
 * **NLP Avanzado:** Gensim (LDA para Topic Modeling).
 * **Visualización:** Matplotlib, Seaborn, WordCloud.
 
@@ -62,4 +66,4 @@ Para garantizar la reproducibilidad y facilitar la revisión, el proyecto se enc
 * `Proyecto_Final_Text_Analytics.ipynb`: Notebook principal con todo el pipeline de datos, desde la limpieza hasta la inferencia.
 * `README.md`: Descripción técnica del repositorio.
 
-> **Nota:** El análisis detallado del caso de negocio, las métricas comparativas finales y las conclusiones estratégicas se encuentran detalladas en el **Documento de Resultados Formal** entregado por separado.
+> **Nota:** El análisis detallado del caso de negocio, las métricas comparativas finales y las conclusiones estratégicas se encuentran detalladas en el **Resultados_Proyecto** entregado por separado.
