@@ -63,6 +63,11 @@ Para garantizar la reproducibilidad y facilitar la revisión, el proyecto se enc
 ---
 
 ### Estructura del Repositorio
+
+* [📄 Resultados_Proyecto.pdf](Resultados_Proyecto.pdf): Documento formal con el análisis detallado, metodología y conclusiones estratégicas.
+* [📓 ProyectoTextAnalytics.ipynb](ProyectoTextAnalytics.ipynb): Notebook principal con el código fuente, EDA y entrenamiento de modelos.
+* [📝 README.md](README.md): Descripción técnica y guía de navegación del proyecto.
+  
 * `Proyecto_Final_Text_Analytics.ipynb`: Notebook principal con todo el pipeline de datos, desde la limpieza hasta la inferencia.
 * `README.md`: Descripción técnica del repositorio.
 
